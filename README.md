@@ -25,13 +25,11 @@
 
 | Login | Dashboard |
 |:---:|:---:|
-| ![Login Page](https://via.placeholder.com/500x300/3f51b5/FFFFFF?text=Login+Page) | ![Dashboard](https://via.placeholder.com/500x300/1a237e/FFFFFF?text=Dashboard) |
+| ![Login Page](docs/screenshots/login.png) | ![Dashboard](docs/screenshots/dashboard.png) |
 
 | Routine Matrix | Analytics |
 |:---:|:---:|
-| ![Routine](https://via.placeholder.com/500x300/283593/FFFFFF?text=Routine+Matrix) | ![Analytics](https://via.placeholder.com/500x300/0d47a1/FFFFFF?text=Analytics+Report) |
-
-> 💡 *Replace these placeholders with actual screenshots of your deployed app for maximum impact.*
+| ![Routine](docs/screenshots/routine.png) | ![Analytics](docs/screenshots/analytics.png) |
 
 </div>
 
