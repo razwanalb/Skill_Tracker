@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3f51b5;
+  --color-primary-dark: #303f9f;
+  --color-accent: #ff4081;
+  --color-surface: #f4f7f9;
+  --color-card: #ffffff;
+  --color-ink: #2c3e50;
+  --color-muted: #7f8c8d;
+  --color-line: #e0e6ed;
+  
+  --color-success: #4caf50;
+  --color-pending: #ff9800;
+  --color-error: #f44336;
+  
+  --color-sidebar: #212529;
+  --color-sidebar-active: #2c3136;
+  --color-sidebar-item: #adb5bd;
+}
+
+.dark {
+  --color-surface: #0f172a;
+  --color-card: #1e293b;
+  --color-ink: #f8fafc;
+  --color-muted: #94a3b8;
+  --color-line: #334155;
+  
+  /* Sidebar uses dark colors by default, but we can match them if needed, or keep them as is. Let's keep them the same or slightly adjusted. */
+  --color-sidebar: #0f172a;
+  --color-sidebar-active: #1e293b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-surface);
+  color: var(--color-ink);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.shadow-card {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.dark .shadow-card {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Custom scrollbar to look sleek */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-line);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted);
+}

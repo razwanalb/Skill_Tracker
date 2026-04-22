@@ -1,0 +1,50 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile and settings",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "The user's ID" },
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "theme": { "type": "string", "enum": ["light", "dark"] },
+        "timezone": { "type": "string" },
+        "baseTimezone": { "type": "string" },
+        "columns": {
+          "type": "array",
+          "description": "The routine columns"
+        },
+        "templateTasks": {
+          "type": "array",
+          "description": "The default routine tasks"
+        },
+        "quotes": {
+          "type": "array",
+          "description": "The user's quotes collection"
+        }
+      },
+      "required": ["uid", "email"]
+    },
+    "DailyRecord": {
+      "title": "DailyRecord",
+      "description": "Recorded tasks for a specific date",
+      "type": "object",
+      "properties": {
+        "date": { "type": "string" },
+        "tasks": { "type": "array" }
+      },
+      "required": ["date", "tasks"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/User" },
+      "description": "Stores user profile, settings, and base templates"
+    },
+    "/users/{userId}/dailyRecords/{dateStr}": {
+      "schema": { "$ref": "#/entities/DailyRecord" },
+      "description": "Stores daily routine records for the user"
+    }
+  }
+}
