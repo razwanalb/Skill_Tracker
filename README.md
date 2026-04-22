@@ -158,6 +158,19 @@ skill-tracker/
 
 ## ⚡ Getting Started
 
+### 🏁 Quick Start
+
+```bash
+git clone https://github.com/razwanalb/Skill_Tracker.git
+cd Skill_Tracker
+npm install        # ⬅️ REQUIRED — installs all dependencies first
+npm run dev        # Starts the app at http://localhost:3000
+```
+
+> ⚠️ **You MUST run `npm install` before `npm run dev`.** The `node_modules/` folder is not included in the repository and must be downloaded locally.
+
+---
+
 ### Prerequisites
 
 - **Node.js** 18+ and **npm** 9+
@@ -166,8 +179,8 @@ skill-tracker/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/skill-tracker.git
-cd skill-tracker
+git clone https://github.com/razwanalb/Skill_Tracker.git
+cd Skill_Tracker
 ```
 
 ### 2. Install Dependencies
