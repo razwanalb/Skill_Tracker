@@ -10,9 +10,6 @@ coverage/
 .env*
 !.env.example
 
-# Firebase (contains API keys — keep private)
-firebase-applet-config.json
-
 # OS files
 .DS_Store
 Thumbs.db
