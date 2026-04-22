@@ -4,7 +4,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip,
 import { Share2, Download } from 'lucide-react';
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
-import logoImage from '../images/logo.png';
+import logoImage from '../images/my_logo.png';
 
 export function Analytics() {
   const { columns, dailyRecords, user } = useStore();
